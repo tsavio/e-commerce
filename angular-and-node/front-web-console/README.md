@@ -1,27 +1,50 @@
 # FrontWebConsole
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+Requesitos para uso: 
+    
+- Node 9.1.0 
+- npm 5.5.1
+É recomendado uso do  [NVM](https://github.com/creationix/nvm) (Node Version Manager)
 
-## Development server
+# Desenvolvimento 
+##Como usar:
+```sh
+npm install 
+O comando de build ainda foi feito
+``` 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Arquivos de configurações
 
-## Code scaffolding
+Agora os arquivos de configuração da aplicação angular ficam dentro da pasta config localizada dentro da pasta src.
+Sendo os arquivos de definição dos modulos, dependências, e suas importações junto com importações de controllers e components.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Importações
 
-## Build
+Se faz necessario importar todos os controllers e components dentro dos arquivos 'controllers.js' e 'components.js' dentro da pasta imports respectivamente.
+Isso é necessario para ganhar mais rastreabilidade, assertividade e otimização para build de producão pelo webpack, alem de trazer inicializações de componentes do angular mais rapidos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Sempre que for criar um controller novo sera nessesario tal importação, assim como filtro, serviço e etc.
 
-## Running unit tests
+### Routes 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+É feito uso da chave template junto de um require para o arquivo.
+```sh
+.when('/dashboard', {
+template: require('../app/dashboard/dashboard.html'),
+controller: 'DashboardController',
+controllerAs: 'dashCtrl'
+})
+```
 
-## Running end-to-end tests
+### NgInclude
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Para utilizar o ngInclude é necessario adicionar o template ao cache do angular. Isso é feito atraves do service$templateCache seguindo o exemplo abaixo.
 
-## Further help
+```sh
+$templateCache.put("caminho/arquivo.html", require("./caminho/aquivo.html"));
+```
+Apos ser adicionado ao cache, é possivel utilizar a string passada como primeiro parametro na diretiva do ngInclude.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```sh
+<div ng-include="'caminho/arquivo.html'"></div>
+```
