@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "front-web-console": {
-      "root": "",
+      "root": "e2e",
       "projectType": "application",
       "architect": {
         "build": {
