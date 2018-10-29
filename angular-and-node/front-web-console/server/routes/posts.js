@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Route();
 
 const axios = require('axios');
-const PostApi = 'https://jsonplaceholder.typicode.com/'
+const PostApi = 'https://jsonplaceholder.typicode.com/';
 
 // GET POST
 

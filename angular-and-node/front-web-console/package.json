@@ -1,5 +1,5 @@
 {
-  "name": "front-web-console",
+  "name": "angular-and-node",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -24,6 +24,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
     "core-js": "^2.4.1",
+    "express": "^4.16.4",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
