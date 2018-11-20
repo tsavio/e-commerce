@@ -13,7 +13,7 @@ app.get('*', (req, res)=>{
     res.sendFile(path.join(__dirname, 'scr/app/dashboard.html'));
 });
 
-const port = process.env.PORT || 4600;
+const port = process.env.PORT || 4200;
 app.listen(port, (req, res)=>{
     console.log(`RUNNING on port ${port}`);
 });

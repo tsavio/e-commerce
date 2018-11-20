@@ -1,3 +1,53 @@
-<p>
-  contato works!
-</p>
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-3 p-4 ">
+      <div class="card">
+        <img class="card-img-top" src="src/img/waths.png" style="cursor:pointer;" [alt]="v.descricao" (click)="openVideo(v)"
+          data-toggle="modal" data-target=".bd-example-modal-lg">
+        <div class="card-body text-center">
+          <h5 class="card-title h6">
+            <strong>Whatsapp</strong>
+          </h5>
+          <span class="badge badge-pill">99376-7154</span>
+          <p class="card-text h6" style="color: #8c8c8c;font-size:13px;">
+          </p>
+          <p class="card-text h6 " style="font-size:13px;color: #8c8c8c;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div> 
+    <div class="col-md-3 p-4 ">
+      <div class="card">
+        <img class="card-img-top" src="src/img/face.png" style="cursor:pointer;" [alt]="v.descricao" (click)="openVideo(v)"
+          data-toggle="modal" data-target=".bd-example-modal-lg">
+        <div class="card-body text-center">
+          <h5 class="card-title h6">
+            <a href="https://www.facebook.com/maaybrigaderia/">Facebook</a>
+          </h5>
+          <span class="badge badge-pill">Maay Brigaderia</span>
+          <p class="card-text h6" style="color: #8c8c8c;font-size:13px;">
+          </p>
+          <p class="card-text h6 " style="font-size:13px;color: #8c8c8c;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3 p-4 ">
+      <div class="card">
+        <img class="card-img-top" src="src/img/insta.jpeg" style="cursor:pointer;" [alt]="v.descricao" (click)="openVideo(v)"
+          data-toggle="modal" data-target=".bd-example-modal-lg">
+        <div class="card-body text-center">
+          <h5 class="card-title h6">
+            <a href="https://www.instagram.com/maaybrigaderia/?hl=pt-br">Instagram</a>
+          </h5>
+          <span class="badge badge-pill">@maaybrigaderia</span>
+          <p class="card-text h6" style="color: #8c8c8c;font-size:13px;">
+          </p>
+          <p class="card-text h6 " style="font-size:13px;color: #8c8c8c;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
