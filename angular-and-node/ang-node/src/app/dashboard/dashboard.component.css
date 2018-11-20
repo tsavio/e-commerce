@@ -1,0 +1,40 @@
+#backgroundlogo{
+    background: rgb(244, 241, 210);
+    margin: -8px;
+
+}
+
+#logomay{
+    width:280px;
+    height:260px;
+    margin-left: 38%;
+    margin-right: 58%;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 240px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #111;
+} 
+

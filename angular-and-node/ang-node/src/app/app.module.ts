@@ -1,19 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { ContatoComponent } from './contato/contato.component';
+import { AppRoutes } from './app.roting';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProdutosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    RouterModule
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
